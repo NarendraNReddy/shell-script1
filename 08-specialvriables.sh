@@ -10,5 +10,5 @@ echo "home dir:$HOME"
 
 echo "hostname:$HOSTNAME"
 echo "pid of current process:$$"
-sleep 60
+sleep 60 &
 echo "pid of background process:$!"
