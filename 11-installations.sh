@@ -38,8 +38,7 @@ VALIDATE $? "mysql server instllation"
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "git  server instllation"
 
-dnf install wrong -y &>>$LOGFILE
-VALIDATE $? "wrong installation"
+
 
       
 
