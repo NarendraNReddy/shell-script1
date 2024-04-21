@@ -1,6 +1,6 @@
 #!/usr/bin
 
-NUMBER=5
+NUMBER=11
 
 if [ $NUMBER -ge 10 ];
 then
