@@ -35,5 +35,14 @@ fi
 
 for i in $@;
 do  
-    echo $i
+    package to install $i &>>$LOGFILE
+    dnf list installed $i &>>$LOGFILE
+
+    if [ $? -eq 0 ];
+    then 
+        echo -e "$i already installed"
+    else 
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "$i installation"     
+    fi
 done     
